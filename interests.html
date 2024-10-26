@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Interests Quiz</title>
+    <link rel="stylesheet" href="interests.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>🌟 Personal Interests Quiz 🌟</h1>
+        <form id="interests-quiz">
+
+            <!-- Friends Section -->
+            <div class="friends-section">
+                <label for="friends">Enter Your Friends' Names:</label>
+                <input type="text" id="friends" placeholder="Type a friend's name..." autocomplete="off" oninput="autocompleteFriend(this.value)">
+                <div id="friends-list" class="autocomplete-list"></div>
+                <button type="button" onclick="addFriend()">Add Friend</button>
+                <div id="friends-selected" class="selected-list"></div>
+            </div>
+
+            <!-- Interests Section -->
+            <div class="interests-section">
+                <label for="interests">Select Interests:</label>
+                <div>
+                    <label><input type="checkbox" value="Free Food"> Free Food</label>
+                    <label><input type="checkbox" value="Religious Events"> Religious Events</label>
+                    <label><input type="checkbox" value="Connection Events"> Connection Events</label>
+                </div>
+            </div>
+
+            <!-- Minorities Section -->
+            <div class="minorities-section">
+                <label for="minorities">Select Minorities:</label>
+                <input type="text" id="minorities" placeholder="Type your minority group..." autocomplete="off" oninput="autocompleteMinority(this.value)">
+                <div id="minority-list" class="autocomplete-list"></div>
+                <button type="button" onclick="addMinority()">Add Minority</button>
+                <div id="minorities-selected" class="selected-list"></div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit-section">
+                <button type="submit" onclick="location.href='Homepage.html'" class="submit-btn">Submit Your Interests! 🚀</button>
+            </div>
+
+            <!-- Area to Display Collected Info -->
+            <div id="selected-info" class="selected-info"></div>
+
+        </form>
+    </div>
+
+    <script src="interests.js"></script>
+</body>
+</html>

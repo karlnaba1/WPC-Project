@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Availability Picker with Multiple Time Frames</title>
+    <link rel="stylesheet" href="availability.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Availability!</h1>
+        <form id="availability-form">
+
+            <!-- Monday -->
+            <div class="day">
+                <label for="monday">Monday:</label>
+                <input type="checkbox" id="monday" name="availability" value="Monday" onchange="toggleTimeInputs('monday')">
+                <div id="monday-times-container" style="display: none;">
+                    <div class="time-inputs">
+                        From: <input type="time" id="monday-start-1" name="monday-start-1">
+                        To: <input type="time" id="monday-end-1" name="monday-end-1">
+                    </div>
+                    <button type="button" onclick="addTimeFrame('monday')" class="add-time-btn">Add Time</button>
+                </div>
+            </div>
+
+            <!-- Tuesday -->
+            <div class="day">
+                <label for="tuesday">Tuesday:</label>
+                <input type="checkbox" id="tuesday" name="availability" value="Tuesday" onchange="toggleTimeInputs('tuesday')">
+                <div id="tuesday-times-container" style="display: none;">
+                    <div class="time-inputs">
+                        From: <input type="time" id="tuesday-start-1" name="tuesday-start-1">
+                        To: <input type="time" id="tuesday-end-1" name="tuesday-end-1">
+                    </div>
+                    <button type="button" onclick="addTimeFrame('tuesday')" class="add-time-btn">Add Time</button>
+                </div>
+            </div>
+
+            <!-- Wednesday -->
+            <div class="day">
+                <label for="wednesday">Wednesday:</label>
+                <input type="checkbox" id="wednesday" name="availability" value="Wednesday" onchange="toggleTimeInputs('wednesday')">
+                <div id="wednesday-times-container" style="display: none;">
+                    <div class="time-inputs">
+                        From: <input type="time" id="wednesday-start-1" name="wednesday-start-1">
+                        To: <input type="time" id="wednesday-end-1" name="wednesday-end-1">
+                    </div>
+                    <button type="button" onclick="addTimeFrame('wednesday')" class="add-time-btn">Add Time</button>
+                </div>
+            </div>
+
+            <!-- Thursday -->
+            <div class="day">
+                <label for="thursday">Thursday:</label>
+                <input type="checkbox" id="thursday" name="availability" value="Thursday" onchange="toggleTimeInputs('thursday')">
+                <div id="thursday-times-container" style="display: none;">
+                    <div class="time-inputs">
+                        From: <input type="time" id="thursday-start-1" name="thursday-start-1">
+                        To: <input type="time" id="thursday-end-1" name="thursday-end-1">
+                    </div>
+                    <button type="button" onclick="addTimeFrame('thursday')" class="add-time-btn">Add Time</button>
+                </div>
+            </div>
+
+            <!-- Friday -->
+            <div class="day">
+                <label for="friday">Friday:</label>
+                <input type="checkbox" id="friday" name="availability" value="Friday" onchange="toggleTimeInputs('friday')">
+                <div id="friday-times-container" style="display: none;">
+                    <div class="time-inputs">
+                        From: <input type="time" id="friday-start-1" name="friday-start-1">
+                        To: <input type="time" id="friday-end-1" name="friday-end-1">
+                    </div>
+                    <button type="button" onclick="addTimeFrame('friday')" class="add-time-btn">Add Time</button>
+                </div>
+            </div>
+
+            <!-- Saturday -->
+            <div class="day">
+                <label for="saturday">Saturday:</label>
+                <input type="checkbox" id="saturday" name="availability" value="Saturday" onchange="toggleTimeInputs('saturday')">
+                <div id="saturday-times-container" style="display: none;">
+                    <div class="time-inputs">
+                        From: <input type="time" id="saturday-start-1" name="saturday-start-1">
+                        To: <input type="time" id="saturday-end-1" name="saturday-end-1">
+                    </div>
+                    <button type="button" onclick="addTimeFrame('saturday')" class="add-time-btn">Add Time</button>
+                </div>
+            </div>
+
+            <!-- Sunday -->
+            <div class="day">
+                <label for="sunday">Sunday:</label>
+                <input type="checkbox" id="sunday" name="availability" value="Sunday" onchange="toggleTimeInputs('sunday')">
+                <div id="sunday-times-container" style="display: none;">
+                    <div class="time-inputs">
+                        From: <input type="time" id="sunday-start-1" name="sunday-start-1">
+                        To: <input type="time" id="sunday-end-1" name="sunday-end-1">
+                    </div>
+                    <button type="button" onclick="addTimeFrame('sunday')" class="add-time-btn">Add Time</button>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit">
+                <button type="submit" onclick="location.href='Hobbies.html'">Submit Availability</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="avail_script.js"></script>
+</body>
+</html>

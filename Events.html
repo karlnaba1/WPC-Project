@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Finder</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎉 Upcoming Events 🎉</h1>
+            <p>Find events that interest you!</p>
+        </header>
+        <section class="filter-section">
+            <label for="filter">Filter by Type:</label>
+            <select id="filter" onchange="filterEvents()">
+                <option value="all">All</option>
+                <option value="workshop">Workshop</option>
+                <option value="networking">Networking</option>
+                <option value="social">Social</option>
+                <option value="religious">Religious</option>
+                <option value="education">Education</option>
+            </select>
+        </section>
+        <section id="events-list" class="events-list">
+            <!-- Events will be dynamically inserted here -->
+        </section>
+    </div>
+    <script src="events.js"></script>
+</body>
+</html>

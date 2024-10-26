@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies Quiz</title>
+    <link rel="stylesheet" href="hobbies.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>🎉 What's Your Favorite Hobby? 🎉</h1>
+        <p>Select your hobbies from the categories below:</p>
+        <form id="hobbies-quiz">
+
+            <!-- Major Hobbies Dropdown 1 -->
+            <div class="hobby-section">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(event, 'artsDropdown')">🎨 Arts & Crafts</button>
+                    <div id="artsDropdown" class="dropdown-content">
+                        <label><input type="checkbox" value="Drawing & Sketching"> Drawing & Sketching</label>
+                        <label><input type="checkbox" value="Painting"> Painting</label>
+                        <label><input type="checkbox" value="Knitting & Crocheting"> Knitting & Crocheting</label>
+                        <label><input type="checkbox" value="Sculpting"> Sculpting</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Major Hobbies Dropdown 2 -->
+            <div class="hobby-section">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(event, 'musicDropdown')">🎵 Music</button>
+                    <div id="musicDropdown" class="dropdown-content">
+                        <label><input type="checkbox" value="Guitar"> Guitar</label>
+                        <label><input type="checkbox" value="Piano"> Piano</label>
+                        <label><input type="checkbox" value="Singing"> Singing</label>
+                        <label><input type="checkbox" value="Drums"> Drums</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Major Hobbies Dropdown 3 -->
+            <div class="hobby-section">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(event, 'videoGamesDropdown')">🎮 Video Games</button>
+                    <div id="videoGamesDropdown" class="dropdown-content">
+                        <label><input type="checkbox" value="First-Person Shooters"> First-Person Shooters</label>
+                        <label><input type="checkbox" value="Role-Playing Games"> Role-Playing Games</label>
+                        <label><input type="checkbox" value="Sports Games"> Sports Games</label>
+                        <label><input type="checkbox" value="Strategy Games"> Strategy Games</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Major Hobbies Dropdown 4 -->
+            <div class="hobby-section">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(event, 'readingDropdown')">📚 Reading</button>
+                    <div id="readingDropdown" class="dropdown-content">
+                        <label><input type="checkbox" value="Fiction"> Fiction</label>
+                        <label><input type="checkbox" value="Non-fiction"> Non-fiction</label>
+                        <label><input type="checkbox" value="Comics"> Comics</label>
+                        <label><input type="checkbox" value="Poetry"> Poetry</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Major Hobbies Dropdown 5 -->
+            <div class="hobby-section">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(event, 'fitnessDropdown')">🏋️ Fitness</button>
+                    <div id="fitnessDropdown" class="dropdown-content">
+                        <label><input type="checkbox" value="Yoga"> Yoga</label>
+                        <label><input type="checkbox" value="Weightlifting"> Weightlifting</label>
+                        <label><input type="checkbox" value="Running"> Running</label>
+                        <label><input type="checkbox" value="Cycling"> Cycling</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Major Hobbies Dropdown 6 -->
+            <div class="hobby-section">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(event, 'cookingDropdown')">🍳 Cooking</button>
+                    <div id="cookingDropdown" class="dropdown-content">
+                        <label><input type="checkbox" value="Baking"> Baking</label>
+                        <label><input type="checkbox" value="Grilling"> Grilling</label>
+                        <label><input type="checkbox" value="Vegetarian Cooking"> Vegetarian Cooking</label>
+                        <label><input type="checkbox" value="International Cuisine"> International Cuisine</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Major Hobbies Dropdown 7 -->
+            <div class="hobby-section">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(event, 'travelingDropdown')">✈️ Traveling</button>
+                    <div id="travelingDropdown" class="dropdown-content">
+                        <label><input type="checkbox" value="Road Trips"> Road Trips</label>
+                        <label><input type="checkbox" value="Cultural Travel"> Cultural Travel</label>
+                        <label><input type="checkbox" value="Adventure Travel"> Adventure Travel</label>
+                        <label><input type="checkbox" value="Beach Vacations"> Beach Vacations</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Major Hobbies Dropdown 8 -->
+            <div class="hobby-section">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(event, 'photographyDropdown')">📷 Photography</button>
+                    <div id="photographyDropdown" class="dropdown-content">
+                        <label><input type="checkbox" value="Landscape"> Landscape</label>
+                        <label><input type="checkbox" value="Portraits"> Portraits</label>
+                        <label><input type="checkbox" value="Wildlife"> Wildlife</label>
+                        <label><input type="checkbox" value="Street Photography"> Street Photography</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Major Hobbies Dropdown 9 -->
+            <div class="hobby-section">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(event, 'gardeningDropdown')">🌱 Gardening</button>
+                    <div id="gardeningDropdown" class="dropdown-content">
+                        <label><input type="checkbox" value="Flower Gardening"> Flower Gardening</label>
+                        <label><input type="checkbox" value="Vegetable Gardening"> Vegetable Gardening</label>
+                        <label><input type="checkbox" value="Indoor Plants"> Indoor Plants</label>
+                        <label><input type="checkbox" value="Landscaping"> Landscaping</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Major Hobbies Dropdown 10 -->
+            <div class="hobby-section">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(event, 'sportsDropdown')">⚽ Sports</button>
+                    <div id="sportsDropdown" class="dropdown-content">
+                        <label><input type="checkbox" value="Soccer"> Soccer</label>
+                        <label><input type="checkbox" value="Basketball"> Basketball</label>
+                        <label><input type="checkbox" value="Tennis"> Tennis</label>
+                        <label><input type="checkbox" value="Swimming"> Swimming</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit-section">
+                <button type="submit" onclick="location.href='interests.html'" class="submit-btn">Show Me My Hobbies! 🚀</button>
+            </div>
+
+            <!-- Area to Display Selected Hobbies -->
+            <div id="selected-hobbies"  class="selected-hobbies"></div>
+
+        </form>
+    </div>
+
+    <script src="hobbies.js"></script>
+</body>
+</html>

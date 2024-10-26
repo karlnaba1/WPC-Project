@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Messaging</title>
+    <link rel="stylesheet" href="class_chat.css">
+</head>
+<body>
+    <div class="message-container">
+        <header>
+            <h1>📬 Class Messaging</h1>
+            <label for="class-select">Select Your Class:</label>
+            <select id="class-select">
+                <option value="">--Select a Class--</option>
+                <option value="math">Mathematics 101</option>
+                <option value="biology">Biology 102</option>
+                <option value="chemistry">Chemistry 103</option>
+                <option value="history">History 104</option>
+                <option value="literature">Literature 105</option>
+            </select>
+        </header>
+
+        <main>
+            <div id="chat-box" class="chat-box">
+                <!-- Mock chat messages will appear here -->
+            </div>
+            <form id="chat-form">
+                <input type="text" id="message" placeholder="Type your message..." required>
+                <button type="submit">Send</button>
+            </form>
+        </main>
+    </div>
+    <script src="class_chat.js"></script>
+</body>
+</html>

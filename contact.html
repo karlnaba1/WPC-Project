@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Teachers</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📧 Contact Your Teachers 📧</h1>
+            <p>Fill out the form below to send a message to your teachers.</p>
+        </header>
+        <form id="contact-form">
+            <label for="teacher">Select Teacher:</label>
+            <select id="teacher" required>
+                <option value="" disabled selected>Select a teacher</option>
+                <option value="sarah.johnson@gmail.com">Dr. Sarah Johnson (Psychology)</option>
+                <option value="michael.smith@gmail.com">Prof. Michael Smith (Calculus I)</option>
+                <option value="emily.brown@gail.com">Dr. Emily Brown (Sociology)</option>
+                <option value="jason.lee@gmil.com">Dr. Jason Lee (Computer Science)</option>
+                <option value="lisa.white@gmil.com">Prof. Lisa White (American History)</option>
+                <option value="john.davis@gail.com">Dr. John Davis (Public Speaking)</option>
+            </select>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" rows="4" required placeholder="Type your message here..."></textarea>
+
+            <button type="submit">Send Email</button>
+            <div id="response" class="response"></div>
+        </form>
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>

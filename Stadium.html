@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Devil Stadium Seat Selector</title>
+    <link rel="stylesheet" href="stadium_styles.css">
+</head>
+<body>
+    <h1>Pick Your Seat at Sun Devil Stadium</h1>
+    
+    <!-- Stadium image -->
+    <div id="stadium-container">
+        <img src="ASU.jpg" alt="Sun Devil Stadium" id="stadium-img">
+    </div>
+    
+    <!-- Dropdown to select seats -->
+    <div id="seat-selector">
+        <label for="sections">Choose a Section:</label>
+        <select id="sections" onchange="displaySelectedSeat()">
+            <option value="" disabled selected>Select a section</option>
+            <!-- Lower End Zone Sections -->
+            <optgroup label="Lower End Zone">
+                <option value="Section 1">Section 1</option>
+                <option value="Section 2">Section 2</option>
+                <option value="Section 3">Section 3</option>
+            </optgroup>
+
+            <!-- Student Sections -->
+            <optgroup label="New Student Sections">
+                <option value="Section 30L">Section 30L</option>
+                <option value="Section 31L">Section 31L</option>
+                <option value="Section 246">Section 246</option>
+                <option value="Section 247">Section 247</option>
+            </optgroup>
+
+            <!-- Skybox Sections -->
+            <optgroup label="Skybox/Pressbox">
+                <option value="Section 201">Section 201</option>
+                <option value="Section 202">Section 202</option>
+                <option value="Section 203">Section 203</option>
+            </optgroup>
+
+            <!-- More sections go here -->
+        </select>
+    </div>
+
+    <!-- Display the selected seat -->
+    <p id="selected-seat">Selected Section: None</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
